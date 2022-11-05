@@ -1,0 +1,1 @@
+web: gunicorn -w 4 -k uvicorn.workers.UvicornWorker --bind my-libretranslate.herokuapp.com wsgi:app
